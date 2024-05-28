@@ -1,5 +1,5 @@
 # Phising-Detection
-A projecrt of Team JeRoKki to create a python module that can detect malicious URLs.
+A project by Team JeRoKki to create a python module that can detect malicious URLs.
 
 WHAT IT DOES?
 Blacklisting: Checking URLs against a predefined list of known malicious domains.
