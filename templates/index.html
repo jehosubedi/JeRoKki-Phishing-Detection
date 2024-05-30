@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD Url</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Detection</h1>
+        <form method="post" action="/check">
+            <label for="url">Enter URL:</label>
+            <input type="text" id="url" name="url" required>
+            <button type="submit">Check</button>
+        </form>
+        {% if result %}
+            <div class="result">
+                <p>{{ result }}</p>
+            </div>
+        {% endif %}
+        <div class="summary">
+            <h2>Summary of Results</h2>
+            <ul>
+                <li><span>Blacklisted:</span> {{ summary.Blacklisted }}</li>
+                <li><span>Suspicious:</span> {{ summary.Suspicious }}</li>
+                <li><span>Unreachable:</span> {{ summary.Unreachable }}</li>
+                <li><span>Safe:</span> {{ summary.Safe }}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
