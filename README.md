@@ -17,8 +17,9 @@ pip install requests
 HOW TO USE?
 1. git clone the file.
 2. access the directory and save it to your choosen directory.
-3. run the code by typing "python app.py" in the terminal.
-4. type your choosen URL to the terminal for the code to provide the detection of the link.
+3. run the code by typing "python app.py" in the terminal to try the ui in the terminal.
+4. run the code by typing "app.py" in the terminal to test it in a web server called flask.
+4. type your choosen URL to the terminal for the code to provide the detection of the link. (vice versa to web server test)
 5. urls should always start with http:// or https:// to be checked. 
 
 REMINDERS!!
