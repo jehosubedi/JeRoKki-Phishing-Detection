@@ -1,4 +1,4 @@
-# Phising-Detection
+# Phishing-Detection
 A project by Team JeRoKki to create a python module that can detect malicious URLs.
 
 WHAT IT DOES?
